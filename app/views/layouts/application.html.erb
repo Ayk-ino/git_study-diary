@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>StudyDiary</title>
+    <link rel="stylesheet" href="normalize.css">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header id="header">
+      <div class = "header-title">
+       <p>STUDY DIARY</p>
+      </div>
+        <% if user_signed_in? %>
+          <div class = "header-button">
+          　<%= link_to 'ホーム', "/index", method: :get %>
+          </div>
+
+          <div class = "header-button">
+          　<%= link_to '投稿', "/new", method: :get %>
+          </div>
+          <div class = "header-button">
+          　<%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+          </div>
+       <% else %>
+          <div class = "header-button">
+            <%= link_to "ログイン", new_user_session_path, class: "post" %>
+          </div>
+          <div class = "header-button">
+            <%= link_to "新規登録", new_user_registration_path, class: "post" %>
+          </div>
+       <% end %>
+    </header>
+    <div class ="contents">
+      <%= yield %>
+    </div>
+  </body>
+  <div class="footer-wrap">
+    <footer class="footer">
+        <p>
+          Copyright StudyDiary 2022.
+        </p>
+    </footer>
+  </div>
+</html>

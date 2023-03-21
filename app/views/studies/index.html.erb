@@ -1,0 +1,17 @@
+<div class = "study_record">
+    <% if user_signed_in? %>
+      <% @studies.each do |study| %>
+        <div class = "dates"> 
+        <p><%= study.created_at %></p>
+        <p><%= study.updated_at %></p>
+      </div>
+      <div class = "study_memo">
+          <p><%= study.study_record %></p>
+      </div>
+      <div class = "button">
+        <%= link_to '詳細',"/studies/#{study.id}/edit",method: :get %>
+      </div>
+      <% end %>
+    <% else %>
+    <% end %>
+</div>

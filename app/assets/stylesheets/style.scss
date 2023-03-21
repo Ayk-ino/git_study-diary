@@ -1,0 +1,157 @@
+html {
+    font-family: "yuGothic", sans-serif;
+    box-sizing: border-box;
+}
+
+*{
+  margin:0;
+  padding:0;  
+}
+#header{
+/*  top:0;
+  width:auto;
+  background-color:#F2F2F2;
+  z-index:9999;
+  height:300px;
+　display: flex;*/
+　padding: 5px;
+/*  align-items: center;*/
+  display: flex;
+  justify-content: space-between;
+/*  height: 50%;*/
+}
+
+.header-title{
+    letter-spacing: 1px;
+    font-size: 2.0rem;
+    margin-right: auto
+/*    margin: 0 auto;*/
+}
+
+/*.header-bottuns {
+/*    justify-content: right;*/
+/*    display: flex;
+    flex-direction: row; */
+/*    display: flex;
+    align-items: center;*/
+/*    justify-content: space-between;*/
+/*    width: 30%;
+}*/
+
+.header-button a {
+    background: #022859;
+    border-radius: 50%;
+    width: 50px;
+    height : 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+/*    position: relative;*/
+/*    justify-content: space-around;*/
+/*    align-items: center;*/
+/*    margin-right: 0 auto;*/
+/*    margin: 10 auto;*/
+/*    max-width: 260px;*/
+    padding: 30px ;
+    color: #FFFFFF;
+/*    transition: 0.3s ease-in-out;*/
+    font-weight: 500;
+    text-decoration: none;
+}
+/*.header-button a:after {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+    content: "\f0da";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    transform: translateY(-50%);
+}
+.button004 a:hover {
+    background: #313131;
+    color: #FFF;
+}*/
+.contents {
+    height: calc(100vh - 10px);
+    background-color: #FFFFFF;
+}
+
+.target{
+    height: 10px;
+    
+}
+
+.calender{
+    height: 10px;
+}
+
+.daiary  {
+    height: calc(100vh - 10px);
+}
+
+.study_memo  {
+    margin: 10px 30px;
+    border: solid 3px #C4C4C4;
+    background-color:#FFFFFF;
+}
+
+.study_record  {
+    margin: 5px 10px;
+    border: solid 1.5px #C4C4C4;
+    background-color:#FFFFFF;
+
+}
+
+.dates{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.update_date{
+
+}
+
+.record_date{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-decoration: none;
+    margin:0;
+}
+
+.button {
+    width: 100px;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 2px;
+    background-color: #111840;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    color:white; text-decoration:none
+}
+
+.footer {
+    height: 50px;
+    background-color:#002288;
+}
+
+#footer-wrap{
+    width: 100%; 
+}
+
+.contents-user{
+    margin: 5px 10px;
+    border: solid 1.5px #C4C4C4;
+    background-color:#FFFFFF;
+
+}
+
+.field-user{
+    margin: 5px 10px;
+    border: solid 1.5px #C4C4C4;
+    background-color:#FFFFFF;
+
+}
